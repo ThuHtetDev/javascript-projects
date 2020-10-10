@@ -14,3 +14,4 @@ hexBtn.addEventListener('click',function(){
 function getRam(){
     return Math.floor(Math.random() * Math.floor(hex.length))
 }
+console.log('hex')
