@@ -58,7 +58,13 @@ Variables
 Global Styles
 ===============
 */
-
+div.container{
+  margin: 0;
+  background: yellow;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) }
 *,
 ::after,
 ::before {
