@@ -12,8 +12,39 @@
     <!-- styles -->
     <link rel="stylesheet" href="styles.css" />
   </head>
+  <style>
+    .model{
+      position:fixed;
+      top:0;
+      left: 0;
+      display:grid;
+      place-items: center;
+      width:100%;
+      height:100%;
+      background: rgba(73, 166, 233, 0.5);
+    }
+    .nonblock{
+      display: none !important;
+    }
+    .block{
+      display: grid;
+    }
+  </style>
   <body>
-    <h1>modal project</h1>
+    <div class="hero">
+      <div class="banner">
+        <h1>model project</h1>
+        <button class="btn modelBtn">open model</button>
+      </div>
+    </div>
+
+    <!-- model -->
+    <div class="model nonblock">
+      <div class="modal-container">
+        <h1>model box</h1>
+        <button style="right: 10px; top: 10px; position: absolute;" id="closeBtn">close</button>
+      </div>
+    </div>
     <!-- javascript -->
     <script src="app.js"></script>
   </body>
